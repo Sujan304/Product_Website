@@ -1,0 +1,86 @@
+<!-- I declare that my Final assessment assignment is wholly my own work in
+accordance with Seneca Academic Policy. No part of this assignment has been
+copied manually or electronically from any other source (including web sites)
+except for the information supplied by the WEB222 instructor and / or made
+available in this assignment for my use.
+I also declare that no part of this assignment has been distributed to other
+students.
+Name: Sujan Maharjan
+Dated: 2022-04-15  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Maharjan</title>
+    <link rel="stylesheet" href="./normalize.css">
+</head>
+
+<body>
+    <header>
+        <img src="./logo.jpg" alt="logo not found">
+        <h3>Moon Knight</h3>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="./honesty.html">Honesty</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a href="./reflection.html">Reflection</a></li>
+        </ol>
+    </nav>
+    <br>
+    <h2 id="head">Register Product</h2>
+
+    <div id="form_1">
+        <form method='post' name='signup' action="https://httpbin.org/post" onsubmit="return submitForm()">
+            <label id="input_" for="productID" title="Product Id">Product Id:</label>
+            <input type="text" name="productID" id="productID" pattern="^\d{8}$" size="35"
+                title="8 characters long digits only" required><br><br>
+
+            <label id="input_1" for="productDesc" title="Product Description">Product Description:</label>
+            <textarea name="productDesc" id="productDesc" required></textarea><br><br>
+
+            <label class="input_2" for="price" title="Product Price">Price:</label>
+            <input type="text" name="price" id="price"
+                pattern="[1-90-9][1-90-9][1-9]||[1-9][1-90-9][1-90-9]||[1-90-9][1-9][1-90-9]"
+                title="Digit only, decimal not allowed. Less then 1000" size="35" required><br><br>
+
+            <label class="input_2" for="username" title="Username">Username:</label>
+            <input type="text" name="username" id="username" size="35" required>
+
+            <p id="sup">Supplier Status:</p>
+            <input type="checkbox" name="supplier" id="supplier" value="new"><label class="label_1">New
+                Supplier</label><br>
+            <input type="checkbox" name="supplier" id="supplier_1" value="signed"><label class="label_1">Contract
+                Signed</label><br>
+            <input type="checkbox" name="supplier" id="supplier_2" value="tested"><label class="label_1">Quality
+                Tested</label><br><br>
+
+            <label for="email" title="Email Address">Email:</label>
+            <input type="email" name="email" id="email" title="Inappropriate email address" size="35" required><br><br>
+
+            <input type="hidden" name="lastName" id="lastName" value="Maharjan" />
+            <input type="hidden" name="studentId" id="studentId" value="122239197" />
+            <input class="button_1" type="submit" value="Signup" id="button_1">
+            <input class="button_1" type="reset" value="Clear">
+        </form>
+
+    </div>
+    <aside id="error">
+        <h3>Error Panel</h3>
+        <p id="errorMsg"></p>
+        <p id="errorMsg_1"></p>
+        <p id="errorMsg_2"></p>
+
+    </aside>
+    <footer>
+        <p id="footer_1"> <a id="link" href="https://github.com/Sujan304/Website">©2022 - &nbsp;Sujan Maharjan-Link to
+                GitHub</a></p>
+    </footer>
+    <script src="./product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+/* I declare that my Final assessment assignment is wholly my own work in
+accordance with Seneca Academic Policy. No part of this assignment has been
+copied manually or electronically from any other source (including web sites)
+except for the information supplied by the WEB222 instructor and / or made
+available in this assignment for my use.
+I also declare that no part of this assignment has been distributed to other
+students.
+Name: Sujan Maharjan
+Dated: 2022-04-15 */
+
+body {
+    margin: auto;
+    width: 80%;
+    background-color: rgb(127, 174, 174);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav ol {
+    background-color: #eaf3ec;
+    position: fixed;
+    border-radius: 1rem;
+    left: 31rem;
+    top: 1.8rem;
+    box-shadow: 10px 10px 80px 2px rgb(145, 232, 142);
+    border: 2px solid black;
+}
+
+nav ol li {
+    float: left;
+    list-style-type: none;
+    margin: 1rem 2rem;
+    transition: 2s;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 545;
+    padding-right: 1.8rem;
+}
+
+nav ol li:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+#honesty {
+    position: absolute;
+    top: 15rem;
+    left: 23rem;
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#form_1 {
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    width: 36rem;
+    position: absolute;
+    top: 10rem;
+    left: 29.5%;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+
+input {
+    border-radius: 0.4rem;
+    height: 1.8rem;
+    position: relative;
+    left: 7rem;
+    border: 1px solid black;
+}
+
+#input_1 {
+    position: relative;
+    bottom: 3rem;
+}
+
+label {
+    position: relative;
+    left: 6rem;
+}
+
+textarea {
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 0.8rem;
+    border: none;
+    border: 1px solid black;
+}
+
+.input_2,
+#username {
+    position: relative;
+    top: 2rem;
+}
+
+#price {
+    position: relative;
+    left: 9.3rem;
+    top: 2rem;
+}
+
+#sup {
+    position: relative;
+    left: 6rem;
+    top: 2rem;
+    display: block;
+}
+
+#supplier,
+#supplier_1,
+#supplier_2 {
+    position: relative;
+    left: 11rem;
+    top: 1rem;
+}
+
+.label_1 {
+    position: relative;
+    left: 11.5rem;
+    top: 0.3rem;
+}
+
+#email {
+    position: relative;
+    left: 9rem;
+}
+
+
+#error {
+    position: absolute;
+    background-color: #ccd3f5;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    height: 18rem;
+    width: 20rem;
+    left: 69rem;
+    top: 17rem;
+    border-radius: 1rem;
+    color: red;
+    border: 2px solid black;
+}
+
+#error h3 {
+    position: relative;
+    left: 6.5rem;
+    top: 1rem;
+}
+
+#error p {
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.button_1 {
+    position: relative;
+    left: 10rem;
+    margin: 0rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(134, 134, 213);
+    padding: 0rem 1.5rem;
+    transition: 2s;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+
+.button_1:hover {
+    transform: scale(1.2);
+}
+
+#reflect {
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    padding: 2rem;
+    position: relative;
+    bottom: 2.8rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#footer {
+    font-weight: bold;
+    color: brown;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 41.9rem;
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+#footer_1 {
+    font-weight: bold;
+    color: brown;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -0.9rem;
+    left: 38.9rem;
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+header h3 {
+    color: darkgreen;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    display: inline-block;
+    position: relative;
+    bottom: 1rem;
+}
+
+img {
+    width: 140px;
+    height: 50px;
+    margin-top: 3rem;
+    margin-left: -3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#head {
+    position: absolute;
+    left: 42rem;
+    bottom: 36rem;
+    z-index: 1;
+    background-color: #d3d9f7;
+    box-shadow: 10px 10px 80px 2px rgb(156, 142, 232);
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+#link {
+    text-decoration: none;
+    color: crimson;
+}
+
+
+
+@media only screen and (min-width:1860px) {
+    nav ol {
+        left: 42rem;
+        top: 4.8rem;
+    }
+
+    #honesty {
+        top: 20rem;
+        left: 27rem;
+    }
+
+    #form_1 {
+        top: 16rem;
+        left: 32.5%;
+    }
+
+    #head {
+        left: 53.5rem;
+        bottom: 43rem;
+    }
+
+    #error {
+        left: 82rem;
+    }
+
+    #reflect {
+        top: 9rem;
+    }
+
+    #footer {
+        left: 52.9rem;
+    }
+
+    #footer_1 {
+        left: 50rem;
+    }
+
+    @media only screen and (min-width:1920px) and (min-height:1080px) {
+        #head {
+            bottom: 51rem;
+        }
+
+    }
+}
